@@ -1,4 +1,4 @@
-// File: src/components/Dashboard.jsx
+
 import React, { useEffect, useState } from 'react';
 import ArticleTable from './ArticleTable';
 import Filters from './Filters';
@@ -146,7 +146,8 @@ const Dashboard = () => {
 
       <PayoutTable data={filteredArticles} isAdmin={true} />
 
-      <ExportButtons />
+     <ExportButtons data={filteredArticles} />
+
 
       {/* Chart Section */}
       <div className="mt-8">

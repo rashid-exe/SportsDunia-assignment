@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="bg-blue-600 text-white p-4 text-xl font-bold">
+    <div className="bg-black text-white p-4 text-xl font-bold">
       News & Payout Dashboard
     </div>
   );

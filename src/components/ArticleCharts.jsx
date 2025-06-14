@@ -1,4 +1,4 @@
-// File: src/components/ArticleCharts.jsx
+
 import React from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, PieChart, Pie, Cell, Legend, ResponsiveContainer
@@ -7,7 +7,7 @@ import {
 const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff7f50', '#00c49f'];
 
 const ArticleCharts = ({ articles }) => {
-  // Count articles by author
+  
   const authorData = Object.values(
     articles.reduce((acc, curr) => {
       acc[curr.author] = acc[curr.author] || { author: curr.author, count: 0 };
@@ -16,7 +16,7 @@ const ArticleCharts = ({ articles }) => {
     }, {})
   );
 
-  // Count articles by type
+  
   const typeData = Object.values(
     articles.reduce((acc, curr) => {
       acc[curr.type] = acc[curr.type] || { name: curr.type, value: 0 };
